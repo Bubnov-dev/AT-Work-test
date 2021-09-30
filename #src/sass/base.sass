@@ -1,0 +1,138 @@
+/* Экраны */
+$mobileS: 375px
+$desktop: 1200px
+
+/* Цвета */
+$back: #eef2f4
+$black: #1B1C1E
+$serv: #DFEBFA
+$pink: #E11E3E
+$blue: #4A80AA
+$green: #7CC076
+$border: #EEF2F4
+$blue-light: #C4CDDF
+$dark-border: #95AECA33
+$dark-grey: #767D86
+$back-op: #1B1C1EBF
+
+
+
+
+/* fonts */
+
+
+*
+    box-sizing: border-box
+
+body
+    background: $back
+    font-family: 'Source Sans Pro', sans-serif
+    color: $black
+    margin: 0
+    padding: 113px 0 60px
+    @media screen and ( max-width: $desktop )
+        padding: 0
+        
+
+.container
+    margin: 0 auto
+    max-width: 1140px
+    width: 100vw
+
+    
+main
+    margin: 113px 0 60px
+    overflow-x: hidden
+
+picture
+    display: grid
+
+h1
+    //styleName: pagename;
+    font-family: 'Source Sans Pro', sans-serif
+    font-size: 34px
+    font-style: normal
+    font-weight: 600
+    line-height: 38px
+    letter-spacing: 0em
+    text-align: left
+    margin-bottom: 11px
+    margin-top: 0
+
+    @media screen and ( max-width: $desktop )
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        margin-bottom: 0    
+
+
+.price
+    //styleName: price;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    &::after
+        content: " ₽"
+
+    @media screen and ( max-width: $desktop )
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 34px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        
+
+
+button
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    display: flex
+    place-content: center
+    align-items: center
+    padding: 8px
+    height: fit-content
+    gap: 10px
+    border-radius: 6px;
+    cursor: pointer
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    &.pink-btn
+        background: $pink
+        box-shadow: 0px 2px 6px rgba(223, 51, 27, 0.4);
+        color: white
+        border: 2px solid $pink
+        transition: .3s
+        &:hover
+            color: $pink
+            border: 2px solid $pink
+            background: transparent
+
+            
+.mobile-only
+    display: none
+    @media screen and ( max-width: $desktop )
+        display: inline-block
+        
+        
+.desktop-only
+    display: inline-block
+    @media screen and ( max-width: $desktop )
+        display: none
