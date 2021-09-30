@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/* Экраны */
+
+/* Цвета */
+
+/* fonts */
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #eef2f4;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #1B1C1E;
+  margin: 0;
+  padding: 113px 0 60px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100vw;
+}
+
+main {
+  margin: 113px 0 60px;
+  overflow-x: hidden;
+}
+
+picture {
+  display: grid;
+}
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 11px;
+  margin-top: 0;
+}
+
+.price {
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.price::after {
+  content: " ₽";
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  gap: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+button.pink-btn {
+  background: #E11E3E;
+  -webkit-box-shadow: 0px 2px 6px rgba(223, 51, 27, 0.4);
+          box-shadow: 0px 2px 6px rgba(223, 51, 27, 0.4);
+  color: white;
+  border: 2px solid #E11E3E;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+button.pink-btn:hover {
+  color: #E11E3E;
+  border: 2px solid #E11E3E;
+  background: transparent;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: inline-block;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .price {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .mobile-only {
+    display: inline-block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+}
+@supports (-webkit-appearance:none){
+
+}
+
+ @media screen and (max-width: 1200px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
